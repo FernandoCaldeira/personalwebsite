@@ -1,0 +1,214 @@
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url(../fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.woff); }
+
+/*Reset*/
+html {
+  box-sizing: border-box;
+  font-size: 16px; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/*Reset Done*/
+body {
+  font-size: 18px;
+  font-family: "Karla";
+  color: #3C4045; }
+
+h1 {
+  font-family: "Gilroy-Bold";
+  color: #1F78F8; }
+
+h2 {
+  font-family: "Gilroy-Bold";
+  color: #1F78F8; }
+
+p {
+  color: #3C4045; }
+
+section {
+  width: 100%;
+  margin: 6rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 24px;
+  padding-right: 24px; }
+  section.intro-section {
+    margin: 2rem auto 0 auto;
+    display: flex; }
+    section.intro-section h1 {
+      width: 100%; }
+      section.intro-section h1 p {
+        font-size: 2rem; }
+      @media (min-width: 767px) {
+        section.intro-section h1 {
+          width: 50%; } }
+    section.intro-section figure {
+      align-self: flex-end;
+      background-image: url(../assets/img/Fernando_11.png);
+      background-size: 268px 348px;
+      background-position: right;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 348px; }
+      @media (min-width: 767px) {
+        section.intro-section figure {
+          width: 50%; } }
+    @media (min-width: 767px) {
+      section.intro-section {
+        margin: 3rem auto 0 auto; } }
+  section.answer-section {
+    margin: 2rem auto 0 auto; }
+    section.answer-section p {
+      width: 100%;
+      padding-top: 8px;
+      padding-bottom: 24px; }
+    section.answer-section .pacsis-line {
+      width: 600px; }
+    section.answer-section .studying-head {
+      width: 100%; }
+    section.answer-section .studying-line {
+      width: 420px; }
+  section.chat-section {
+    font-family: "Gilroy-Bold";
+    display: flex;
+    justify-content: flex-end;
+    letter-spacing: 0.3px; }
+    section.chat-section .chatbox {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; }
+      section.chat-section .chatbox span {
+        padding: 16px;
+        background-color: #F4F5F7;
+        border-radius: 8px 8px 0 8px;
+        border: 1px solid #F4F5F7; }
+      section.chat-section .chatbox p {
+        font-family: "Karla"; }
+  section.team-section h2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap; }
+  section.team-section span {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    font-size: 2rem;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate; }
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-20px); } }
+
+@keyframes mover {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-20px); } }
+  section.team-section figure {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(../assets/img/Fernando_2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 320px;
+    width: 320px; }
+    @media (min-width: 600px) {
+      section.team-section figure {
+        width: 100%;
+        background-position: right;
+        background-size: 348px 348px; } }
+  section.projects-section h2 {
+    color: #3C4045;
+    width: 100%;
+    font-size: 18px;
+    padding-bottom: 16px; }
+  section.work-section h2 {
+    width: 100%;
+    padding-bottom: 8px; }
+  section.work-section p {
+    padding-bottom: 36px; }
+  section .projects-card {
+    cursor: pointer;
+    text-decoration: none; }
+    section .projects-card figure {
+      border-radius: 8px;
+      max-width: 360px;
+      width: 100%; }
+      section .projects-card figure:hover {
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); }
+      section .projects-card figure img {
+        width: 100%;
+        height: 184px;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0; }
+      section .projects-card figure figcaption {
+        padding: 16px;
+        border-radius: 0 0 8px 8px;
+        background-color: #F4F5F7;
+        color: #3C4045; }
+        section .projects-card figure figcaption h3 {
+          font-size: 18px;
+          text-transform: uppercase; }
+        section .projects-card figure figcaption h4 {
+          padding-top: 8px;
+          font-family: "Gilroy-Bold"; }
+        section .projects-card figure figcaption p {
+          color: #3C4045;
+          padding-top: 16px; }
+      @media (min-width: 400px) {
+        section .projects-card figure {
+          max-width: 100%; } }
+      @media (min-width: 800px) {
+        section .projects-card figure {
+          max-width: 320px; } }
+  @media (min-width: 800px) {
+    section .odd {
+      padding-left: 16px; } }
+  @media (min-width: 768px) {
+    section {
+      max-width: 768px; } }
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(359deg); } }
+
+.dates {
+  padding-bottom: 4px !important; }
+
+footer {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-left: 24px;
+  padding-right: 24px;
+  max-width: 768px; }
+  footer h2 {
+    width: 100%;
+    padding-bottom: 8px; }
+  footer p {
+    width: 100%; }
+  footer .contact {
+    padding-bottom: 24px; }

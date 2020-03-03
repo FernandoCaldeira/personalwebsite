@@ -1,2 +1,2 @@
-# personalwebsite
-My own personal website
+# Personal Website Product Design Focused
+

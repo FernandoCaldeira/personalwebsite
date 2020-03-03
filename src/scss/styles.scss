@@ -1,0 +1,348 @@
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url(../fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.woff);
+  }
+
+$primary-color: #1F78F8;
+$secondary-color: #1F78F8;
+$accent-color: #fff;
+
+$light-neutral: #F4F5F7;
+$light-neutral-1: #fff;
+$light-neutral-2: #F4F5F7;
+$dark-neutral: #3C4045;
+//$dark-neutral: #222;
+$dark-neutral-1: #3C4045;
+
+$spacing-1: 4px;
+$spacing-2: 8px;
+$spacing-3: 16px;
+$spacing-4: 24px;
+$spacing-5: 36px;
+
+/*Reset*/
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+margin: 0;
+padding: 0;
+font-weight: normal;
+}
+
+ol, ul {
+list-style: none;
+}
+
+img {
+max-width: 100%;
+height: auto;
+}
+
+/*Reset Done*/
+body {
+    font-size: 18px;
+    font-family: 'Karla', ;
+    color: $dark-neutral;
+}
+
+h1 {
+    font-family: 'Gilroy-Bold', ;
+    color: $primary-color;
+}
+
+h2 {
+    font-family: 'Gilroy-Bold', ;
+    color: $primary-color;
+}
+
+p {
+    color: $dark-neutral-1;
+}
+
+section {
+    width: 100%;
+    margin: 6rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: $spacing-4;
+    padding-right: $spacing-4;
+    
+    &.intro-section {
+                
+        margin: 2rem auto 0 auto;
+        display: flex;
+
+        h1 {
+            
+            width: 100%;
+            
+            p {
+                font-size: 2rem;
+            }
+
+            @media (min-width: 767px) {
+                width: 50%;
+            }
+
+        }
+
+        figure {
+            align-self: flex-end;
+            background-image: url(../assets/img/Fernando_11.png);
+            background-size: 268px 348px;
+            background-position: right;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 348px; 
+            
+            @media (min-width: 767px) {
+                width: 50%;
+            }
+            
+        }
+
+        @media (min-width: 767px) {
+                margin: 3rem auto 0 auto;
+            }
+
+    }
+
+    &.answer-section {
+       
+        margin: 2rem auto 0 auto;
+
+        p {
+            width: 100%;
+            padding-top: $spacing-2;
+            padding-bottom: $spacing-4;
+
+          
+        }
+
+        .pacsis-line {
+            width: 600px;
+        }
+
+        .studying-head {
+            width: 100%;
+        }
+
+        .studying-line {
+            width: 420px;
+        }
+    
+    }
+
+    &.chat-section {
+        font-family: 'Gilroy-Bold', ;
+        display: flex;
+        justify-content: flex-end;
+        letter-spacing: 0.3px;
+
+        .chatbox {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            
+            span {
+                padding: $spacing-3;
+                background-color: $light-neutral-2;
+                border-radius: $spacing-2 $spacing-2 0 $spacing-2;
+                border: 1px solid #F4F5F7;
+            }
+
+            p {
+                font-family: 'Karla',;
+            }
+
+        }
+    }
+
+    &.team-section {
+        
+        h2 {
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        span {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            font-size: 2rem;
+            -webkit-animation: mover 1s infinite  alternate;
+            animation: mover 1s infinite  alternate;
+        }
+
+        @-webkit-keyframes mover {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
+        }
+        @keyframes mover {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
+        }
+
+        figure {
+            display: flex;
+            justify-content: flex-end;
+            background-image: url(../assets/img/Fernando_2.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 320px;
+            width: 320px;
+            
+            @media (min-width: 600px) {
+                width: 100%;
+                background-position: right;
+                background-size: 348px 348px;
+            }
+
+        }
+    }
+
+    &.projects-section {
+
+        h2 {
+            color: $dark-neutral;
+            width: 100%;
+            font-size: 18px;
+            padding-bottom: $spacing-3;
+        }
+
+    }
+
+    &.work-section {
+
+        h2 {
+            width: 100%;
+            padding-bottom: $spacing-2;
+        }
+
+        p {
+            padding-bottom: $spacing-5;
+        }
+
+        
+
+    }
+
+    .projects-card {
+            
+            
+            cursor: pointer;
+            text-decoration: none;
+       
+            figure {
+                
+                border-radius: $spacing-2;
+                //é na linha de baixo que defino o tamanho dos cards
+                max-width: 360px;
+                width: 100%;
+                
+                &:hover {
+                    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+                }
+
+                //box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+                img {
+                    width: 100%;
+                    height: 184px;
+                    object-fit: cover;
+                    border-radius: $spacing-2 $spacing-2 0 0;   
+                }
+                
+                figcaption {
+                    
+                    padding: $spacing-3;
+                    border-radius: 0 0 $spacing-2 $spacing-2;
+                    background-color: $light-neutral;
+                    color: $dark-neutral;
+    
+                    h3 {
+                        font-size: 18px;
+                        text-transform: uppercase;
+                    }
+    
+                    h4 {
+                        padding-top: $spacing-2;
+                        font-family: 'Gilroy-Bold', ;
+                    }
+    
+                    p {
+                        color:$dark-neutral-1;
+                        padding-top: $spacing-3;
+                    }
+                }
+
+                @media (min-width: 400px) {
+                    max-width: 100%;
+                }
+
+                @media (min-width: 800px) {
+                    max-width: 320px;
+                }
+            }
+
+    }
+
+    .odd {
+        @media (min-width: 800px) {
+            padding-left: $spacing-3;
+        }
+    }
+
+
+    @media (min-width: 768px) {
+        max-width: 768px;
+    }
+
+    @-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+   
+}
+
+.dates {
+    padding-bottom: $spacing-1 !important;
+}
+
+footer {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: $spacing-4;
+    padding-right: $spacing-4;
+    max-width: 768px;
+
+    h2 {
+        width: 100%;
+        padding-bottom: $spacing-2;
+    }
+
+    p {
+        width: 100%;
+    }
+
+    .contact {
+        padding-bottom: $spacing-4;
+    }
+}
